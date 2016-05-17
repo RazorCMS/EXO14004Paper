@@ -331,8 +331,8 @@ required to have $\MR>200$\GeV and $\RR^2>0.5$.
 \section{Event categories}\label{sec:sampleDef}
 
 Events are classified according to the muon and
-b-tagged jet multiplicities.  Eight samples are defined, as summarized
-in Table~\ref{tab:boxes}.
+b-tagged jet multiplicities.  Eight regions are defined, as summarized
+in Tables~\ref{tab:boxes} and~\ref{tab:boxes1}.
 
 The events with no b-tagged jets are divided into three samples: 0$\mu$,
 1$\mu$, and 2$\mu$. The 2$\mu$ sample includes events with two or more
@@ -364,26 +364,73 @@ events were also selected in the monojet search~\cite{monojet8TeV}, which used d
 The overlap
 in the L and VL categories is negligible, while the overlapping events in the H and VH categories were shown not to have an impact on the final sensitivity. Consequently, the results
 from this analysis and from the monojet analysis are largely statistically independent.
+
+% \begin{table}
+%   \topcaption{\label{tab:boxes} Definition of the event categories
+%     based on the muon multiplicity, the output of the CSV b-tagging
+%     algorithm, and the value of $\MR$. For all the samples,
+%     $\RR^2>0.5$ is required.}
+%   \centering
+%  \begin{tabular}{lll}
+%   \hline
+%   \multicolumn{1}{c}{Sample}  &  \multicolumn{1}{c}{b-tagging selection}  &  \multicolumn{1}{c}{$\MR$ selection} \\
+%   \hline
+%   \multirow{4}{*}{0$\mu$, 1$\mu$, and 2$\mu$}  &  \multirow{4}{*}{no CSV loose jet}  &  $200<\MR \leq 300$\GeV (VL) \\
+%    &   &  $300<\MR \leq 400$\GeV (L) \\
+%    &   &  $400<\MR \leq 600$\GeV (H) \\
+%    &   &  \phantom{$400<$}$\MR > 600$\GeV (VH) \\
+     %      \hline
+%  0$\mu$bb  &  $\geq 2$ CSV tight jets  &  \multicolumn{1}{r}{\multirow{5}{*}{$\MR > 200$\GeV}} \\
+%  0$\mu$b  &  $=$1 CSV tight jet    &  \\[\cmsTabSkip]
+%  1$\mu$b  &  \multirow{2}{*}{$\geq 1$ CSV tight jets}  &  \\
+%  2$\mu$b  &   &  \\[\cmsTabSkip]
+% $\cPZ(\mu\mu)$b  &  $\geq$1 CSV loose jets  &  \\
+% \hline
+% \end{tabular}
+% \end{table}
+
 \begin{table}
-  \topcaption{\label{tab:boxes} Definition of the event categories
-    based on the muon multiplicity, the output of the CSV b-tagging
-    algorithm, and the value of $\MR$. For all the samples,
+  \topcaption{\label{tab:boxes} Analysis regions for
+    events with zero identified b-tagged jets. The definition of these
+    regions is based on the muon multiplicity, the output of the CSV b-tagging
+    algorithm, and the value of $\MR$. For all the regions,
     $\RR^2>0.5$ is required.}
   \centering
- \begin{tabular}{lll}
+ \begin{tabular}{llll}
   \hline
-  \multicolumn{1}{c}{Sample}  &  \multicolumn{1}{c}{b-tagging selection}  &  \multicolumn{1}{c}{$\MR$ selection} \\
+  \multicolumn{1}{c}{analysis region}  & \multicolumn{1}{c}{purpose} &  \multicolumn{1}{c}{b-tagging selection}  &  \multicolumn{1}{c}{$\MR$ category} \\
   \hline
-  \multirow{4}{*}{0$\mu$, 1$\mu$, and 2$\mu$}  &  \multirow{4}{*}{no CSV loose jet}  &  $200<\MR \leq 300$\GeV (VL) \\
-   &   &  $300<\MR \leq 400$\GeV (L) \\
-   &   &  $400<\MR \leq 600$\GeV (H) \\
-   &   &  \phantom{$400<$}$\MR > 600$\GeV (VH) \\
+  \multirow{2}{*}{0$\mu$}  & \multirow{2}{*}{signal search region} &   &  \\
+   &   &  & $200<\MR \leq 300$\GeV (VL)\\
+  %\cline{1-3}
+\multirow{2}{*}{1$\mu$}  &  \multirow{2}{*}{$\PW(\ell\nu)$ control region} & \multirow{2}{*}{no CSV loose jet} &$300<\MR \leq 400$\GeV (L) \\
+   &   &  &  $400<\MR \leq 600$\GeV (H)\\
+\multirow{2}{*}{2$\mu$}  &  \multirow{2}{*}{$\cPZ(\ell \ell)$ control region} &  & \phantom{$400<$}$\MR > 600$\GeV (VH)\\
+&   &  & \\
 \hline
- 0$\mu$bb  &  $\geq 2$ CSV tight jets  &  \multicolumn{1}{r}{\multirow{5}{*}{$\MR > 200$\GeV}} \\
- 0$\mu$b  &  $=$1 CSV tight jet    &  \\[\cmsTabSkip]
- 1$\mu$b  &  \multirow{2}{*}{$\geq 1$ CSV tight jets}  &  \\
- 2$\mu$b  &   &  \\[\cmsTabSkip]
-$\cPZ(\mu\mu)$b  &  $\geq$1 CSV loose jets  &  \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+  \topcaption{\label{tab:boxes1} Analysis regions for
+    events with identified b-tagged jets. The definition of these
+    regions is based on the muon multiplicity, the output of the CSV b-tagging
+    algorithm, and the value of $\MR$. For all the regions,
+    $\RR^2>0.5$ is required.}
+  \centering
+ \begin{tabular}{llll}
+\hline
+\hline
+ \multicolumn{1}{c}{analysis region}  & \multicolumn{1}{c}{purpose}  &  \multicolumn{1}{c}{b-tagging
+                                      selection}  &
+                                                    \multicolumn{1}{c}{$\MR$
+                                                    category} \\
+\hline
+ 0$\mu$bb  & \multirow{2}{*}{signal serach region} &$\geq 2$ CSV tight jets  &  \multicolumn{1}{r}{\multirow{8}{*}{$\MR > 200$\GeV}} \\
+0$\mu$b  & & $= 1$ CSV tight jet &  \\\\
+1$\mu$b  & $\ttbar$ control region &  \multirow{2}{*}{$\geq 1$ CSV tight jets}  & \\
+2$\mu$b  & $\ttbar$ control region &   &  \\\\
+$\cPZ(\mu\mu)$b & $\cPZ(\ell \ell)$ control region  &$\geq 1$ CSV loose jets  &  \\
 \hline
 \end{tabular}
 \end{table}

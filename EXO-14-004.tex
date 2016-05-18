@@ -295,6 +295,9 @@ candidate is identified as a lepton if the isolation variable is found to be sma
 For electrons~\cite{ElectronsCMS}, a characteristic of the shower
 shape of the energy deposit in the ECAL (the shower width in the
 $\eta$ direction) is used to further reduce the contamination from hadrons.
+PF candidates with $\pt > 10$\GeV that are not consistent with muons and satisfy the same isolation
+requirements as those used for electrons are also identified to increase the 
+lepton selection efficiency as well as to identify single-prong tau decays. 
 
 
 Jets are formed by clustering the PF candidates, using the anti-\kt algorithm with distance
@@ -331,66 +334,56 @@ than 2.5 radians. The momenta of the two megajets are used to compute
 the razor variables, according to Eq.~(\ref{eq:razor},~\ref{eq:MTR}).  Events are
 required to have $\MR>200$\GeV and $\RR^2>0.5$.
 
-\section{Event categories}\label{sec:sampleDef}
+\section{Analysis Strategy}\label{sec:sampleDef}
 
-Events are classified according to the muon and
-b-tagged jet multiplicities.  Eight regions are defined, as summarized
-in Tables~\ref{tab:boxes} and~\ref{tab:boxes1}.
+To enhance the DM signal, we perform the search on events with zero selected electrons or muons,
+in order to suppress background contributions from the $\PW$+jets and $\ttbar$ processes. 
+A further suppression of such backgrounds is achieved by requiring that the event contains no isolated 
+PF candidates. We define three different search regions based on the number of b-tagged jets that are
+identified. The zero b-tag search region contains events where no jets were identified with the CSV loose 
+b-tagging criterion; the one b-tag search region contains events where one and only one jet
+passed the CSV tight criterion; and the two b-tag search region contains events where two or more
+jets passed the CSV tight critierion. Events in the zero b-tag search region are further classified 
+into four categories based on the value of $\MR$: 
+(i) \textit{very low} $\MR$ (VL), defined by $200<\MR \leq 300$\GeV; 
+(ii) \textit{low} $\MR$ (L), with $300 <\MR \leq 400$\GeV; 
+(iii) \textit{high} $\MR$ (H), with $400 <\MR\leq 600$\GeV; 
+and (iv) \textit{very high}$\MR$ (VH), including events with $\MR>600$\GeV. 
 
-The events with no b-tagged jets are divided into three samples: 0$\mu$,
-1$\mu$, and 2$\mu$. The 2$\mu$ sample includes events with two or more
-muons with at least one muon pair that has an invariant
-mass $80 < M_{\mu\mu} \le 100\GeV$. The $1\mu$ sample is
-composed of the events with exactly one muon. The $0\mu$ sample
-(events with no muons) is used
-to search for candidate signal events; the 1$\mu$, 2$\mu$ samples are used to predict
-the background in the 0$\mu$ sample.
-
-Similarly, five samples of selected events with b-tagged jets are
-defined: 0$\mu$bb, 0$\mu$b, 1$\mu$b, 2$\mu$b, and
-$\cPZ(\mu\mu)$b. The 2$\mu$b sample contains events with $10<
-M_{\mu\mu} <75$\GeV or $105< M_{\mu\mu} <200\GeV$,
-while the $\cPZ(\mu\mu)$b sample includes events with $80<
-M_{\mu\mu} \leq 100$\GeV. The signal is searched for in the
-0$\mu$bb and 0$\mu$b samples.
-
-Events in the 0$\mu$, 1$\mu$, and 2$\mu$ samples are further
-classified according to their $\MR$ value: (i) \textit{very low} $\MR$ (VL), defined by $200<\MR
-\leq 300$\GeV; (ii) \textit{low} $\MR$ (L), with $300
-<\MR \leq 400$\GeV; (iii) \textit{high} $\MR$ (H),
-with $400 <\MR\leq 600$\GeV; and (iv) \textit{very high}
-$\MR$ (VH), including events with $\MR>600$\GeV. Owing to the smaller sample size, no
-$\MR$ classification is performed for the events with b-tagged
-jets.
 In the H and VH categories, 3\% and 35\% respectively of the selected
 events were also selected in the monojet search~\cite{monojet8TeV}, which used data from the same running period.
 The overlap
 in the L and VL categories is negligible, while the overlapping events in the H and VH categories were shown not to have an impact on the final sensitivity. Consequently, the results
 from this analysis and from the monojet analysis are largely statistically independent.
 
-% \begin{table}
-%   \topcaption{\label{tab:boxes} Definition of the event categories
-%     based on the muon multiplicity, the output of the CSV b-tagging
-%     algorithm, and the value of $\MR$. For all the samples,
-%     $\RR^2>0.5$ is required.}
-%   \centering
-%  \begin{tabular}{lll}
-%   \hline
-%   \multicolumn{1}{c}{Sample}  &  \multicolumn{1}{c}{b-tagging selection}  &  \multicolumn{1}{c}{$\MR$ selection} \\
-%   \hline
-%   \multirow{4}{*}{0$\mu$, 1$\mu$, and 2$\mu$}  &  \multirow{4}{*}{no CSV loose jet}  &  $200<\MR \leq 300$\GeV (VL) \\
-%    &   &  $300<\MR \leq 400$\GeV (L) \\
-%    &   &  $400<\MR \leq 600$\GeV (H) \\
-%    &   &  \phantom{$400<$}$\MR > 600$\GeV (VH) \\
-     %      \hline
-%  0$\mu$bb  &  $\geq 2$ CSV tight jets  &  \multicolumn{1}{r}{\multirow{5}{*}{$\MR > 200$\GeV}} \\
-%  0$\mu$b  &  $=$1 CSV tight jet    &  \\[\cmsTabSkip]
-%  1$\mu$b  &  \multirow{2}{*}{$\geq 1$ CSV tight jets}  &  \\
-%  2$\mu$b  &   &  \\[\cmsTabSkip]
-% $\cPZ(\mu\mu)$b  &  $\geq$1 CSV loose jets  &  \\
-% \hline
-% \end{tabular}
-% \end{table}
+The main backgrounds in the zero b-tag search region are from the $\PW(\ell\nu)$+jets 
+and $\cPZ(\PGn\PAGn)$+jets processes, while the dominant background in the one and two
+b-tag search regions is the $\ttbar$ process. To estimate the contribution of these
+backgrounds on the search regions, we use a data-driven method which extrapolates
+from appropriately selected control regions to the search region, assisted by 
+Monte Carlo simulation. A more detailed description of the background
+estimation method is discussed in Section~\ref{sec:bkg} below. 
+
+To estimate the $\PW(\ell\nu)$+jets and $\cPZ(\PGn\PAGn)$+jets background in the
+zero b-tag search region, we define the 1$\mu$ control region by selecting events
+using the identical requirements to those used in the search region, with the exception 
+of additionally requiring one selected muon. Events in this control region are extrapolated
+to the search region in order to estimate the background. In addition, we define 
+the 2$\mu$ control region, enhanced in the $\cPZ(\ell \ell)$ process, by requiring two selected 
+muons. The 2$\mu$ control region is used to perform a cross-check prediction for the
+1$\mu$ control region, from which systematic uncertainties are estimated.
+
+To estimate the $\ttbar$ background in the one and two b-tag search regions, 
+we define the 1$\mu$b and 2$\mu$b control regions, by requiring at least one
+jet satisfying the CSV tight b-tagging criterion along with one and two selected
+muons respectively. Both of these control regions are dominated by the
+$\ttbar$ process. The $\ttbar$ background prediction is estimated by extrapolating 
+from the 2$\mu$b control region, while the 1$\mu$b control region is used 
+as a cross-check to estimate systematic uncertainties.
+
+The definitions of the search and control regions, and their use in this analysis are
+summarized in Tables\~ref{tab:boxes}~and~\ref{tab:boxes1}.
+
 
 \begin{table}
   \topcaption{\label{tab:boxes} Analysis regions for

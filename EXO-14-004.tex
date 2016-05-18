@@ -385,7 +385,11 @@ jet satisfying the CSV tight b-tagging criterion along with one and two selected
 muons respectively. Both of these control regions are dominated by the
 $\ttbar$ process. The $\ttbar$ background prediction is estimated by extrapolating 
 from the 2$\mu$b control region, while the 1$\mu$b control region is used 
-as a cross-check to estimate systematic uncertainties.
+as a cross-check to estimate systematic uncertainties. Finally, we define 
+the $\cPZ(\mu\mu)$b control region by requiring two muons with invariant
+mass between $80$\GeV and $100$\GeV, which is used to estimate the 
+$\cPZ(\PGn\PAGn)$+jets background in the one and two b-tag search regions.
+
 
 The definitions of the search and control regions, and their use in this analysis are
 summarized in Tables~\ref{tab:boxes}~and~\ref{tab:boxes1}.
@@ -451,16 +455,21 @@ events in which a $\cPZ$ boson decays to a pair of charged
 leptons. These processes are referred to as $\ttbar$ and
 $\cPZ(\ell \ell)$+jets, respectively. Using
 simulated samples, the contribution from other SM processes, such as
-diboson production, is found to be negligible.
+diboson production, is found to be negligible. 
 
 The main background in the one and two b-tag search regions comes from $\ttbar$ events. 
 The use of the tight working point of the CSV
 algorithm reduces the presence of $\cPZ(\PGn\PAGn)$+jets
 and $\PW(\ell\nu)$+jets events to 22\% and 10\%, respectively.
 
-The rest of this section describes the estimation of background in the signal samples using control samples in data and the comparison to the
-observed yields.
-
+Multijet production, which is the most abundant source of events with jets and
+unbalanced \pt, contribute to the search region primarily due to 
+instrumental mismeasurement of the energy of jets. As a result the
+\MET direction tends to be highly aligned in the azimuthal coordinate with
+the razor megajets. The requirement on the razor variables and 
+$\abs{ \Delta\phi (j_{1}, j_{2})}$ combine to reduce the multijet
+background to a negligible level, and is confirmed by checking 
+data control regions with looser cuts on the razor variables.
 
 \subsection{Background estimation for the zero b-tag search region} 
 \label{sec:bkgzmu}
@@ -666,40 +675,40 @@ Details on the signal benchmark models are given in Section~\ref{sec:EFT0mu}.
 the variable bin widths.\label{fig:0muSignalBkg1GeV} }
 \end{figure}
 
-\subsection{Background estimation for the \texorpdfstring{0$\mu$b and 0$\mu$bb}{0 mu b and 0 mu bb} samples}
-A technique similar to that described in Section~\ref{sec:bkgzmu} is used to determine the
-expected background for the 0$\mu$b and the 0$\mu$bb samples.
 
-The background from $\ttbar$ events for each $\RR^2$ bin in the
-0$\mu$b sample, $n(\ttbar)_{i}^{0\mu\PQb}$, is computed as:
+\subsection{Background estimation for the \texorpdfstring{0$\mu$b and 0$\mu$bb}{0 mu b and 0 mu bb} samples}
+
+A similar data-driven technique is used to determine the expected background for the 
+one and two b-tag search regions. The background from $\ttbar$ events for each $\RR^2$ bin in the
+one b-tag search region, $n(\ttbar)_{i}^{0\mu\PQb}$, is computed as:
 \begin{equation}
   n(\ttbar)_{i}^{0\mu\PQb} =  \bigl(n(\ttbar)_{i}^{2\mu\PQb} - N_{i}^{\cPZ(\ell
     \ell)+\text{jets},2\mu\PQb} - N_{i}^{\PW(\ell\nu)+\text{jets},2\mu\PQb}\bigr)
 \frac{N(\ttbar)_{i}^{0\mu\PQb}}{N(\ttbar)_{i}^{2\mu\PQb}}\label{eq:bBkgPred}
 \end{equation}
 where $n(\ttbar)_{i}^{2\mu\PQb}$ is the observed yield in the $i$th $\RR^2$
-bin for the 2$\mu$b sample, while $N(\ttbar)_{i}^{0\mu\PQb}$ and
-$N(\ttbar)_{i}^{2\mu\PQb}$ are, respectively, the corresponding $\ttbar$ yields in the $i$th $\RR^2$
-bin for the 0$\mu$b and 2$\mu$b samples derived from
-the simulated \ttbar sample. Similarly, the \ttbar background in the
-0$\mu$bb sample is derived from Eq.~(\ref{eq:bBkgPred}), replacing
-$N(\ttbar)_{i}^{0\mu\PQb}$ with $N(\ttbar)_{i}^{0\mu\mathrm{bb}}$, the \ttbar
-background yield in the $i$th bin of the 0$\mu$bb sample, predicted
-from the simulated \ttbar events. The data yield in the 2$\mu$b sample is
+bin in the 2$\mu$b control region, while $N(\ttbar)_{i}^{0\mu\PQb}$ and
+$N(\ttbar)_{i}^{2\mu\PQb}$ are the $\ttbar$ yields in the $i$th $\RR^2$ bin 
+predicted by the simulation for the one b-tag search region and the 2$\mu$b control region
+respectively. Similarly, the \ttbar background in the two b-tag search region
+is derived from Eq.~(\ref{eq:bBkgPred}), replacing $N(\ttbar)_{i}^{0\mu\PQb}$ 
+with $N(\ttbar)_{i}^{0\mu\mathrm{bb}}$, the \ttbar
+background yield in the $i$th bin of the two b-tag search region predicted
+by the simulation. The data yield in the 2$\mu$b control region is
 corrected to account for the small contamination from $\cPZ$+jets and
- $\PW$+jets, predicted with the simulated yields $N_{i}^{\cPZ(\ell\ell)+\text{jets},2\mu\PQb}$ and
-    $N_{i}^{\PW(\ell\nu)+\text{jets},2\mu\PQb}$, respectively.
+$\PW$+jets, predicted with the simulated yields $N_{i}^{\cPZ(\ell\ell)+\text{jets},2\mu\PQb}$ and
+$N_{i}^{\PW(\ell\nu)+\text{jets},2\mu\PQb}$, respectively.
 
 
-The background contribution from $\PW(\ell \nu)$+jets and $\cPZ(\PGn\PAGn)$+jets events is predicted using the $\cPZ(\mu\mu)$b sample,
-having a $\cPZ$+jets purity ${\approx}$89\% (see
-Table~\ref{tab:WITHB}). The observed yield in the $\cPZ(\mu\mu)$b
-sample is shown in the left plot of Fig.~\ref{fig:Zmumub}, as a
-function of $\RR^2$. This contribution, scaled by the ratio of the predicted V+jets background in the signal region to that in the control sample, obtained from simulation, provides an
-estimate for each $\RR^2$ bin. In Table~\ref{tab:WITHB}  and
-in the left plot of Fig.~\ref{fig:Zmumub}, discrepancies between the observation and the prediction could be
-larger than the quoted uncertainty, since the latter accounts only for the
-statistical uncertainty of the simulated sample.
+The background contribution from $\PW(\ell \nu)$+jets and $\cPZ(\PGn\PAGn)$+jets events is 
+predicted using the $\cPZ(\mu\mu)$b control region, and summarized in Table~\ref{tab:WITHB}.
+The $\cPZ$+jets purity of this control region is ${\approx}$89\%. 
+The observed yield in the $\cPZ(\mu\mu)$b control region is shown in the left plot of Fig.~\ref{fig:Zmumub}, 
+as a function of $\RR^2$, along with the Monte Carlo simulation prediction. The uncertainty on the
+simulation prediction accounts only for the statistical uncertainty of the simulated sample.
+This contribution, scaled by the ratio of the predicted V+jets background in the search regions 
+to that in the control region, obtained from simulation, provides an estimate for each $\RR^2$ bin. 
+
 \begin{table}
 \centering
 \topcaption{\label{tab:WITHB}
@@ -737,30 +746,32 @@ estimated from simulated samples.}
    in the left plot, and the total uncertainty in the right plot. The horizontal bars indicate
 the variable bin widths.\label{fig:Zmumub}}
 \end{figure}
-As a cross-check of the method, the same
-procedure is applied to derive the expected yield in the 1$\mu$b
-control sample (see the right plot of Fig.~\ref{fig:Zmumub}), using as input the same 2$\mu$b and $\cPZ(\mu\mu)$b
-control samples.
 
-The estimated background in the 0$\mu$b and 0$\mu$bb
-samples is given in Table~\ref{tab:bkg0muWITHB} and shown in Fig.~\ref{fig:0muttbar}, where it is compared to
+We perform a cross-check of the method on the 1$\mu$b control region
+by predicting the background from the 2$\mu$b control region data.
+The data and prediction are compared on the right of Fig.~\ref{fig:Zmumub},
+where we observe reasonable agreement. The difference between the 
+prediction and the observed data in this cross-check region is propagated as a
+systematic uncertainty of the method. 
+
+The estimated background in the one and two b-tag search regions
+is given in Table~\ref{tab:bkg0muWITHB} and shown in Fig.~\ref{fig:0muttbar}, where it is compared to
 the observed yields in data. The uncertainty in the
-estimates takes into account both the statistical and systematic
+estimates take into account both the statistical and systematic
 components.% In the table, the yield expected from simulation is
 \begin{figure}
    \includegraphics[width=0.48\textwidth]{BtagPlots/Bkg_0mu2TbEXC_CP.pdf}
    \includegraphics[width=0.48\textwidth]{BtagPlots/Bkg_0mu1TbEXC_CP.pdf}
  \caption{Comparison of observed event yields and background
    estimates as a function of $\RR^2$, for the
-   $0\mu$bb (left) and $0\mu$b (right) samples. The shaded bands
-   represent the total uncertainty in the estimate. The horizontal bars indicate
+   one (left) and two (right) b-tag search regions.
+   The shaded bands represent the total uncertainty in the estimate. The horizontal bars indicate
 the variable bin widths.\label{fig:0muttbar}}
 \end{figure}
 \begin{table}
 \centering
   \topcaption{ Comparison of the observed yield for
-    events in the search samples
-    with b-tagged jets and the corresponding background
+    events in the one and two b-tag search regions and the corresponding background
     estimates. The uncertainty in the estimates takes into account
     both the statistical and systematic components. The contribution of each individual background process is also shown, as
 estimated from simulated samples, as well as the total MC predicted yield.
@@ -779,19 +790,6 @@ estimated from simulated samples, as well as the total MC predicted yield.
 }
 \end{table}
 
-
-
-\subsection{QCD Multijet Background}
-
-Multijet production is the most abundant source of events with jets
-and unbalanced \pt. Because of measurement uncertainties and the loss
-of jets falling outside the $\eta$ acceptance, the reconstruction
-of multijet events may result in large \MET without the presence of
-non-interacting particles in the final state. Based on simulated
-events, this background should be reduced to a negligible level
-by the event requirements based on the razor variables and $\abs{ \Delta\phi (j_{1}, j_{2})}$ (see
-Section~\ref{sec:selection}). This anticipated background reduction
-is confirmed in data control regions with looser cuts on the razor variables.
 
 
 
@@ -1007,16 +1005,15 @@ bound on $\sigma_{N\chi}$ as a function of $M_\chi$ is shown
 in Fig.~\ref{fig:DMNxsec} for spin-dependent and spin-independent
 DM-nucleon scattering. It is observed that the spin-independent bounds obtained by
 direct detection experiments are more stringent than those obtained by
-the result presented in this letter for masses above$~5$\GeV. Such effect is expected since
-the spin-independent DM-nucleous cross section gets boosted by the coherent
-scattering of DM off nucleons in the case of a vector operator. It is
-important to note that the result presented in this letler is more sensitive for small DM mass
-since the recoil energy gets reduced and therefore more difficult to detect
-by direct detection experiments. In the case of spin-dependent
-DM-nucleous cross section, the results presented in this letter are
-more stringent that those obtained by direct detection experiments
-since the DM-nucleous cross section does not get boosted by coherent
-scattering off the nucleons. A summary of the observed limits for the
+the current result for masses above$~5$\GeV. Such an effect is expected since
+the spin-independent DM-nucleus cross section is enhanced by the coherent
+scattering of DM off nucleons in the case of spin-independent operators. We note
+that the current result is more sensitive for small DM mass
+because the recoil energy in direct detection experiments is reduced and 
+more difficult to detect. In the case of spin-dependent
+DM-nucleus scattering, the current results are more stringent that those 
+obtained by direct detection experiments because the DM-nucleus cross section 
+does not receive the same enhancement. A summary of the observed limits for the
 axial-vector and vector operators can be found in
 Tables~\ref{tab:AVLimit} and~\ref{tab:VLimit} respectively. 
 

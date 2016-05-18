@@ -349,12 +349,18 @@ into four categories based on the value of $\MR$:
 (ii) \textit{low} $\MR$ (L), with $300 <\MR \leq 400$\GeV; 
 (iii) \textit{high} $\MR$ (H), with $400 <\MR\leq 600$\GeV; 
 and (iv) \textit{very high}$\MR$ (VH), including events with $\MR>600$\GeV. 
+Due to the limited size of the data sample, no further 
+categorization based on $\MR$ is made for the one and two b-tag search regions.
+Within each category, the search is performed in bins of the $\RR^2$
+variable, with the binning chosen such that the expected background yield
+in each bin is larger than one event as estimated from Monte Carlo simulation.
 
 In the H and VH categories, 3\% and 35\% respectively of the selected
-events were also selected in the monojet search~\cite{monojet8TeV}, which used data from the same running period.
-The overlap
-in the L and VL categories is negligible, while the overlapping events in the H and VH categories were shown not to have an impact on the final sensitivity. Consequently, the results
-from this analysis and from the monojet analysis are largely statistically independent.
+events were also selected in the monojet search~\cite{monojet8TeV}, which used data from 
+the same running period. The overlap in the L and VL categories is negligible, while the 
+overlapping events in the H and VH categories were shown not to have an impact on the final 
+sensitivity. Consequently, the results from this analysis and from the monojet analysis 
+are largely statistically independent.
 
 The main backgrounds in the zero b-tag search region are from the $\PW(\ell\nu)$+jets 
 and $\cPZ(\PGn\PAGn)$+jets processes, while the dominant background in the one and two
@@ -382,7 +388,8 @@ from the 2$\mu$b control region, while the 1$\mu$b control region is used
 as a cross-check to estimate systematic uncertainties.
 
 The definitions of the search and control regions, and their use in this analysis are
-summarized in Tables\~ref{tab:boxes}~and~\ref{tab:boxes1}.
+summarized in Tables~\ref{tab:boxes}~and~\ref{tab:boxes1}.
+
 
 
 \begin{table}
@@ -431,19 +438,12 @@ $\cPZ(\mu\mu)$b & $\cPZ(\ell \ell)$ control region  &$\geq 1$ CSV loose jets  & 
 \end{tabular}
 \end{table}
 
+
+
+
 \section{Background estimation}\label{sec:bkg}
 
-Multijet production is the most abundant source of events with jets
-and unbalanced \pt. Because of measurement uncertainties and the loss
-of jets falling outside the $\eta$ acceptance, the reconstruction
-of multijet events may result in large \MET without the presence of
-non-interacting particles in the final state. Based on simulated
-events, this background should be reduced to a negligible level
-by the event requirements based on the razor variables and $\abs{ \Delta\phi (j_{1}, j_{2})}$ (see
-Section~\ref{sec:selection}). This anticipated background reduction
-is confirmed in data control regions with looser cuts on the razor variables.
-
-The largest background contribution to the 0$\mu$ sample comes from events in which a W or Z boson is
+The largest background contribution to the zero b-tag search region are from events in which a W or Z boson is
 produced, in association with jets, and decays to a final state with one or more neutrinos. These
 background processes are referred to as $\PW(\ell\nu)$+jets
 and $\cPZ(\PGn\PAGn)$+jets events. Additional backgrounds arise from events involving the production of top quark pairs, and from
@@ -453,25 +453,24 @@ $\cPZ(\ell \ell)$+jets, respectively. Using
 simulated samples, the contribution from other SM processes, such as
 diboson production, is found to be negligible.
 
-The main background in the 0$\mu$b and 0$\mu$bb samples comes from
-$\ttbar$ events. The use of the tight working point of the CSV
+The main background in the one and two b-tag search regions comes from $\ttbar$ events. 
+The use of the tight working point of the CSV
 algorithm reduces the presence of $\cPZ(\PGn\PAGn)$+jets
 and $\PW(\ell\nu)$+jets events to 22\% and 10\%, respectively.
 
 The rest of this section describes the estimation of background in the signal samples using control samples in data and the comparison to the
 observed yields.
 
-\subsection{Background estimation for the \texorpdfstring{0$\mu$}{0 mu} sample\label{sec:bkgzmu}}
 
+\subsection{Background estimation for the zero b-tag search region} 
+\label{sec:bkgzmu}
 
-For events without b-tagged jets, the data yields observed in the
-1$\mu$ sample are used to predict the background from $\PW(\ell\nu)$+jets and
-$\cPZ(\PGn\PAGn)$+jets in the 0$\mu$ sample.  Similarly, the
-observed yield in the 2$\mu$ samples allows the estimation of
-the contamination from $\cPZ(\ell \ell)$+jets in the 0$\mu$ sample. Each
-$\MR$ category is binned in $\RR^2$. Using the simulated background samples, scaled to the
-integrated luminosity of the data, the binning in each category is
-chosen so that there are no bins with zero entries.
+To predict the background from $\PW(\ell\nu)$+jets and $\cPZ(\PGn\PAGn)$+jets in 
+the zero b-tag search region, we use a data-driven method that extrapolates
+the observed data yields in the 1$\mu$ control region to the search region
+Similarly, the observed yield in the 2$\mu$ control region allows the estimation of
+the contribution from $\cPZ(\ell \ell)$+jets background process. Each
+$\MR$ category is binned in $\RR^2$. 
 
 The background expected from $\PW$ and $\cPZ$ boson production, in
 each $\RR^2$ bin and in each $\MR$ category of the 0$\mu$
@@ -480,30 +479,29 @@ sample, is computed as
   n_{i}^{0\mu} =  \Bigl(n_{i}^{1\mu} - N_{i}^{\ttbar,1\mu} - N_{i}^{\cPZ(\ell
     \ell)+\text{jets},1\mu}\Bigr) \frac{N_{i}^{\PW(\ell\nu)+\text{jets},0\mu}+N_{i}^{\cPZ(\PGn\PAGn)+\text{jets},0\mu}}{N_{i}^{\PW(\ell\nu)+\text{jets},1\mu}} +
 \Bigl(n_{i}^{2\mu} - N_{i}^{\ttbar,2\mu}\Bigr) \frac{N_{i}^{\cPZ(\ell \ell)+\text{jets},0\mu}}{N_{i}^{\cPZ(\ell \ell)+\text{jets},2\mu}},
+\label{eqn:pred}
 \end{equation}
 where $n_{i}^{k\mu}$ labels the data yield in bin $i$ for the sample
 with $k$ muons, and $N_{i}^{X,k\mu}$ indicates the corresponding yield
-for process $X$, derived from simulations.
-
-This background estimation method relies on the assumption that
-the kinematic properties of events in which $\PW$ and $\cPZ$ bosons are
+for process $X$, derived from simulations. This background estimation method relies on 
+the assumption that the kinematic properties of events in which $\PW$ and $\cPZ$ bosons are
 produced are similar.
 
-As a cross-check of the method, the observed yield in the 2$\mu$ sample is used to
-predict the 1$\mu$ yield. Simulated event samples are used to estimate
-the ratio of 1$\mu$ to 2$\mu$ events in each bin, and the small
-contribution from $\ttbar$ events.
-In Table~\ref{tab:bkg1mu}, the observed yields in the 1$\mu$ sample
+To estimate the accuracy of the background estimation method, we perform a cross-check 
+analysis by predicting the background in the 1$\mu$ control region using the observed data yield
+in the 2$\mu$ control region. The Monte Carlo simulation is used to perform this extrapolation
+analogous to the calculation in Equation~\ref{eqn:pred}.
+The small contribution from the $\ttbar$ background process is also estimated using the simulated
+samples. In Table~\ref{tab:bkg1mu}, the observed yields in the 1$\mu$ control region
 are compared to the estimate derived from data. The contribution of each process is also given,
-as predicted directly by simulated samples and therefore not used in
-the final result. For completeness, the corresponding
-information for the 2$\mu$ sample is given in Table~\ref{tab:bkg2mu}.
+as predicted directly by simulated samples, which is not used in the final result. 
+For completeness, the corresponding information for the 2$\mu$ control region is given in Table~\ref{tab:bkg2mu}.
 
 
 \begin{table}[htb]
-  \topcaption{\label{tab:bkg1mu} Comparison of the observed yield for
-    1$\mu$ events in each $\MR$ category and the
-    corresponding background estimates, using the 2$\mu$ sample. The uncertainty in
+  \topcaption{\label{tab:bkg1mu} Comparison of the observed yield in the
+    1$\mu$ control region in each $\MR$ category and the
+    corresponding data-driven background estimate obtained by extrapolating from the 2$\mu$ control region. The uncertainty in
     the estimates takes into account both the statistical
     and systematic components. The contribution of each individual background process is also shown, as
 estimated from simulated samples, as well as the total MC predicted yield.}
@@ -527,11 +525,11 @@ estimated from simulated samples, as well as the total MC predicted yield.}
 \begin{table}[htb]
   \centering
   \topcaption{\label{tab:bkg2mu} Comparison of the observed yield for
-    2$\mu$ events in each $\MR$ category and the
+    the 2$\mu$ control region in each $\MR$ category and the
     corresponding prediction from background simulation. The quoted uncertainty
-    in the prediction reflects the size of the
-    simulated sample. The contribution of each individual background process is also shown, as
-estimated from simulated samples.}
+    in the prediction reflects only the size of the simulated sample. The 
+    contribution of each individual background process is also shown, as
+    estimated from simulated samples.}
  \begin{tabular}{*{6}{c}r}
    \hline
 $\MR$  category&  $\cPZ(\PGn\PAGn)$+jets  &  $\PW(\ell
@@ -546,10 +544,12 @@ $\MR$  category&  $\cPZ(\PGn\PAGn)$+jets  &  $\PW(\ell
 \end{tabular}
 \end{table}
 
-Figure~\ref{fig:1muCLOSURE} shows the comparison for the
+Figure~\ref{fig:1muCLOSURE} shows the comparison of the
 $\RR^2$ distributions between the observed yield and the
-estimated background in the 1$\mu$ sample. The observed bin-by-bin difference is taken as a
-systematic uncertainty, associated with the background estimation method.
+data-driven background estimate in the 1$\mu$ control region. 
+The observed bin-by-bin difference is propagated as a systematic uncertainty
+on the data-driven background method, and is discussed in further detail
+in Section~\ref{sec:sys}.
 
 \begin{figure}
  \centering
@@ -557,33 +557,36 @@ systematic uncertainty, associated with the background estimation method.
    \includegraphics[width=0.48\textwidth]{PredPlotsAN_1MU_LE/OneMu_sys_cat_2.pdf}
    \includegraphics[width=0.48\textwidth]{PredPlotsAN_1MU_LE/OneMu_sys_cat_3.pdf}
    \includegraphics[width=0.48\textwidth]{PredPlotsAN_1MU_LE/OneMu_sys_cat_4.pdf}
- \caption{Comparison of observed yields in the 1$\mu$ sample and the
-   background estimates from the 2$\mu$ sample in the four $\MR$ categories:
+ \caption{Comparison of observed yields in the 1$\mu$ control region and the
+   data-driven background estimate derived from on the 2$\mu$ control region data in the four $\MR$ categories:
    VL (top left), L (top right), H (bottom left), and VH (bottom right). The bottom panel in each plot shows the
    ratio between the two distributions. The observed bin-by-bin
-   deviation from unity is taken as a measurement of the uncertainty
-   associated to the background estimation for the 0$\mu$ sample. The
+   deviation from unity is interpreted as an estimate of the systematic uncertainty
+   associated to the background estimation methodology for the 0$\mu$ search region. The
    dark and light bands represent the statistical and the total
    uncertainties in the estimates, respectively. The horizontal bars indicate
 the variable bin widths.\label{fig:1muCLOSURE}}
 \end{figure}
 
-The $\ttbar$ background is determined with simulated
-events, scaled to the NNLO cross section~\cite{WatNNLO,ZatNNLO,TTbaratNNLO} and further corrected for an
-observed deviation from unity in the ratio
-of yields obtained from data and from simulation, measured in each $\RR^2$ bin
-of the 2$\mu$b control sample. The contribution of each  process to
+
+The $\ttbar$ background is estimated using an analogous data-driven method,
+where we derive corrections to the Monte Carlo simulation prediction
+scaled to the $\ttbar$ production cross-section computed to NNLO accuracy~\cite{WatNNLO,ZatNNLO,TTbaratNNLO}
+using data in the 2$\mu$b control region for each bin in $\RR^2$. 
+The correction is then applied to the simulation prediction for
+the $\ttbar$ background contribution to the zero b-tag search region.
+This correction factor reflects potential mismodeling of the recoil
+spectrum predicted by the Monte Carlo simulation. 
+The contribution of each background process to
 the 2$\mu$b sample, predicted from simulated samples, is given in
 Table~\ref{tab:2mub}. The fraction of \ttbar events in the 2$\mu$b
-control sample is ${\approx}95\%$. The observed yield is also
-quoted.
+control sample is ${\approx}95\%$. 
 \begin{table}
 \centering
 \topcaption{\label{tab:2mub} Observed yield and predicted
-    background from simulated
-    samples in the 2$\mu$b control sample. The quoted uncertainty in
-    the prediction reflects the size of the simulated sample. The
-    contribution of each individual background process is also shown,
+    background from simulated samples in the 2$\mu$b control region.
+    The quoted uncertainty in the prediction only reflects the size of the simulated sample. 
+    The contribution of each individual background process is also shown,
     as estimated from simulated samples.}
 \begin{tabular}{*{7}{c}}
   \hline
@@ -596,18 +599,17 @@ quoted.
 \end{table}
 Figure~\ref{fig:2mub} shows the comparison of the observed
 yield and the prediction from simulation, as a function of
-$\RR^2$. The uncertainty derived from the data-to-simulation ratio is
-propagated to the systematic uncertainty in the $\ttbar$ prediction in
-the 0$\mu$ search region. This $\RR^2$-dependent factor and its
-uncertainty account for possible systematic errors in the overall normalization,
-as might arise for instance from a systematic error in the theoretical cross section or in the estimate of the selection acceptance.
+$\RR^2$. We observe no significant deviations between the observed
+data and the simulation prediction. The uncertainty derived from the 
+data-to-simulation correction factor is propagated to the systematic uncertainty 
+of the $\ttbar$ prediction in the zero b-tag search region. 
 
 \begin{figure}
   \centering
    \includegraphics[width=0.47\textwidth]{BtagPlots/MC_CP_2Mu1TbTT_Sep.pdf}
    \caption{Comparison of the observed yield and the prediction from
-     simulation as a function of $\RR^2$ in the 2$\mu$b control
-     sample. The uncertainties in the data and the simulated
+     simulation as a function of $\RR^2$ in the 2$\mu$b control region.
+     The uncertainties in the data and the simulated
      sample are represented by the vertical bars and the shaded bands,
      respectively. The horizontal bars indicate
 the variable bin widths.\label{fig:2mub}}
@@ -620,10 +622,10 @@ as predicted directly by simulated samples and therefore not used in
 the final result.
 \begin{table}
 \centering
-\topcaption{\label{tab:bkg0mu}  Comparison of the observed yield for
-   0$\mu$ events in each $\MR$ category and the
-   corresponding background estimates, using the 1$\mu$ sample. The uncertainty in
-    the estimates takes into account both the statistical
+\topcaption{\label{tab:bkg0mu}  Comparison of the observed yields for
+  for the zero b-tag search region in each $\MR$ category and the
+   corresponding background estimates. The uncertainty in
+    the background estimate takes into account both the statistical
     and systematic components. The contribution of each individual background process is also shown, as
 estimated from simulated samples, as well as the total MC predicted yield.}
 \resizebox{\textwidth}{!}{
@@ -640,20 +642,19 @@ estimated from simulated samples, as well as the total MC predicted yield.}
 \end{tabular}
 }
 \end{table}
-The comparison of the data estimates and the observations for
-each $\MR$ category is shown in
-Fig.~\ref{fig:0muSignalBkg1GeV}, as a function of $\RR^2$. For
-completeness, the expected event distribution is shown for two signal
+The comparison of the data-driven background estimates and the observations for
+each $\MR$ category is shown in Fig.~\ref{fig:0muSignalBkg1GeV}, as a function of $\RR^2$. 
+The expected event distribution is shown for two signal
 benchmark models, corresponding to the pair production of DM particles
-of mass 1\GeV in the effective field theory (EFT) approach with vector coupling to u or d quarks. Details on the signal benchmark models are
-given in Section~\ref{sec:EFT0mu}.
+of mass 1\GeV in the effective field theory (EFT) approach with vector coupling to u or d quarks. 
+Details on the signal benchmark models are given in Section~\ref{sec:EFT0mu}.
 \begin{figure}
  \centering
    \includegraphics[width=0.48\textwidth]{SignalBkgPlots/Data_MC_cat1_1_DoubleSignal_V.pdf}
    \includegraphics[width=0.48\textwidth]{SignalBkgPlots/Data_MC_cat2_1_DoubleSignal_V.pdf}
    \includegraphics[width=0.48\textwidth]{SignalBkgPlots/Data_MC_cat3_1_DoubleSignal_V.pdf}
    \includegraphics[width=0.48\textwidth]{SignalBkgPlots/Data_MC_cat4_1_DoubleSignal_V.pdf}
- \caption{Comparison of the observed yield in the $0\mu$ sample and the
+ \caption{Comparison of the observed yield in the zero b-tag control region and the
    background estimates in the four $\MR$ categories:
    VL (top left), L (top right), H (bottom left), and VH (bottom right). The
    contribution of individual background processes is shown by the
@@ -664,6 +665,7 @@ given in Section~\ref{sec:EFT0mu}.
    vector coupling to u or d quarks. The horizontal bars indicate
 the variable bin widths.\label{fig:0muSignalBkg1GeV} }
 \end{figure}
+
 \subsection{Background estimation for the \texorpdfstring{0$\mu$b and 0$\mu$bb}{0 mu b and 0 mu bb} samples}
 A technique similar to that described in Section~\ref{sec:bkgzmu} is used to determine the
 expected background for the 0$\mu$b and the 0$\mu$bb samples.
@@ -776,6 +778,23 @@ estimated from simulated samples, as well as the total MC predicted yield.
 \end{tabular}
 }
 \end{table}
+
+
+
+\subsection{QCD Multijet Background}
+
+Multijet production is the most abundant source of events with jets
+and unbalanced \pt. Because of measurement uncertainties and the loss
+of jets falling outside the $\eta$ acceptance, the reconstruction
+of multijet events may result in large \MET without the presence of
+non-interacting particles in the final state. Based on simulated
+events, this background should be reduced to a negligible level
+by the event requirements based on the razor variables and $\abs{ \Delta\phi (j_{1}, j_{2})}$ (see
+Section~\ref{sec:selection}). This anticipated background reduction
+is confirmed in data control regions with looser cuts on the razor variables.
+
+
+
 \section{Systematic uncertainties}\label{sec:sys}
 
 For each $\RR^2$ bin in each $\MR$ category, the

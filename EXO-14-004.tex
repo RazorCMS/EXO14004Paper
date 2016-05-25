@@ -338,11 +338,10 @@ required to have $\MR>200$\GeV and $\RR^2>0.5$.
 \section{Analysis Strategy}\label{sec:sampleDef}
 
 To enhance the DM signal and suppress background contributions from the $\PW$+jets and $\ttbar$ processes,
-we perform the search on events with zero selected electrons or muons.
-A further suppression of such backgrounds is achieved by requiring that the event contains no isolated 
-PF candidates. We define three different search regions based on the number of b-tagged jets that are
-identified. The zero b-tag search region contains events where no jets were identified with the CSV loose 
-b-tagging criterion; the one b-tag search region contains events where one and only one jet
+we veto events with selected electrons, muons, or isolated charged PF candidates.
+We define three different search regions based on the number of b-tagged jets. 
+The zero b-tag search region contains events where no jets were identified with the CSV loose 
+b-tagging criterion; the one b-tag search region contains events where exactly one jet
 passed the CSV tight criterion; and the two b-tag search region contains events where two or more
 jets passed the CSV tight critierion. Events in the zero b-tag search region are further classified 
 into four categories based on the value of $\MR$ to enhance signal to background
@@ -369,18 +368,18 @@ and $\cPZ(\PGn\PAGn)$+jets processes, while the dominant background in the one a
 b-tag search regions is the $\ttbar$ process. To estimate the contribution of these
 backgrounds on the search regions, we use a data-driven method which extrapolates
 from appropriately selected control regions to the search region, assisted by 
-Monte Carlo simulation. A more detailed description of the background
-estimation method is discussed in Section~\ref{sec:bkg} below. 
+Monte Carlo simulation. A detailed description of the background
+estimation method is discussed in Section~\ref{sec:bkg}.
 
 To estimate the $\PW(\ell\nu)$+jets and $\cPZ(\PGn\PAGn)$+jets background in the
 zero b-tag search region, we define the 1$\mu$ control region by selecting events
 using the identical requirements to those used in the search region, with the exception 
 of additionally requiring one selected muon. Events in this control region are extrapolated
 to the search region in order to estimate the background. In addition, we define 
-the 2$\mu$ control region, enhanced in the $\cPZ(\ell \ell)$ process, by requiring two selected 
+the 2$\mu$ control region, enhanced in the $\cPZ$+jets process, by requiring two selected 
 muons with invariant mass between $80$\GeV and $100$\GeV. The 2$\mu$ control region is used to perform a cross-check prediction for the
 1$\mu$ control region, and the systematic uncertainties of the
-background estimation method are assigned based on this comparison.
+background prediction are estimated based on this comparison.
 
 To estimate the $\ttbar$ background in the one and two b-tag search regions, 
 we define the 1$\mu$b and 2$\mu$b control regions, by requiring at least one
@@ -450,28 +449,26 @@ $\cPZ(\mu\mu)$b & $\cPZ(\ell \ell)$ control region  &$\geq 1$ CSV loose jets  & 
 
 \section{Background estimation}\label{sec:bkg}
 
-The largest background contribution to the zero b-tag search region are from events in which a W or Z boson is
-produced, in association with jets, and decays to a final state with one or more neutrinos. These
+The largest background contribution to the zero b-tag search region is from events in which a W or Z boson is
+produced, in association with jets, decaying to final states with one or more neutrinos. These
 background processes are referred to as $\PW(\ell\nu)$+jets
 and $\cPZ(\PGn\PAGn)$+jets events. Additional backgrounds arise from events involving the production of top quark pairs, and from
 events in which a $\cPZ$ boson decays to a pair of charged
 leptons. These processes are referred to as $\ttbar$ and
 $\cPZ(\ell \ell)$+jets, respectively. Using
 simulated samples, the contribution from other SM processes, such as
-diboson production, is found to be negligible. 
+diboson and single top production, is found to be negligible. 
 
 The main background in the one and two b-tag search regions comes from $\ttbar$ events. 
 The use of the tight working point of the CSV
-algorithm reduces the presence of $\cPZ(\PGn\PAGn)$+jets
-and $\PW(\ell\nu)$+jets events to 22\% and 10\%, respectively.
-
-Multijet production, which is the most abundant source of events with jets and
-unbalanced \pt, contribute to the search region primarily due to 
+algorithm reduces the $\cPZ(\PGn\PAGn)$+jets and $\PW(\ell\nu)$+jets contribution as
+shown in Table~\ref{tab:bkg0mu}. Multijet production, which is the most abundant source of events with jets and
+unbalanced \pt, contributes to the search region primarily due to 
 instrumental mismeasurement of the energy of jets. As a result the
 \MET direction tends to be highly aligned in the azimuthal coordinate with
 the razor megajets. The requirement on the razor variables and 
-$\abs{ \Delta\phi (j_{1}, j_{2})}$ combine to reduce the multijet
-background to a negligible level, and is confirmed by checking 
+$\abs{ \Delta\phi (j_{1}, j_{2})}$ reduces the multijet
+background to a negligible level, which is confirmed by checking 
 data control regions with looser cuts on the razor variables.
 
 \subsection{Background estimation for the zero b-tag search region} 
@@ -500,15 +497,13 @@ the assumption that the kinematic properties of events in which $\PW$ and $\cPZ$
 produced are similar.
 
 To estimate the accuracy of the background estimation method, we perform a cross-check 
-analysis by predicting the background in the 1$\mu$ control region using the observed data yield
+by predicting the background in the 1$\mu$ control region using the observed data yield
 in the 2$\mu$ control region. The Monte Carlo simulation is used to perform this extrapolation
 analogous to the calculation in Equation~\ref{eqn:pred}.
 The small contribution from the $\ttbar$ background process is also estimated using the simulated
-samples. In Table~\ref{tab:bkg1mu}, the observed yields in the 1$\mu$ control region
-are compared to the estimate derived from data. In Table~\ref{tab:bkg1mu} as well the subsequent tables, the contribution of each process is also given,
-as predicted directly by simulated samples. 
-For completeness, the corresponding information for the 2$\mu$ control region is given in Table~\ref{tab:bkg2mu}.
-
+samples. In Tables~\ref{tab:bkg1mu}~and~\ref{tab:bkg2mu}, the observed yields in the 1$\mu$ and 2$\mu$ control regions
+respectively are compared to the estimate derived from data. In Tables~\ref{tab:bkg1mu}-\ref{tab:bkg0muWITHB}, 
+the contribution of each process as predicted directly by simulated samples are also given.
 
 \begin{table}[htb]
   \topcaption{\label{tab:bkg1mu} Comparison of the observed yield in the
